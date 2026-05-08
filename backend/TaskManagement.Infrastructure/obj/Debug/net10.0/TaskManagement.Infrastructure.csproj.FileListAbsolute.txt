@@ -15,3 +15,6 @@ C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug
 C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.pdb
 C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.genruntimeconfig.cache
 C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\ref\TaskManagement.Infrastructure.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\bin\Debug\net10.0\TaskManagement.Application.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\bin\Debug\net10.0\TaskManagement.Application.pdb
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.sourcelink.json

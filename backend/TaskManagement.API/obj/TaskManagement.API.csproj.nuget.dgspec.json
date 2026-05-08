@@ -59,6 +59,12 @@
               "target": "Package",
               "version": "[10.0.7, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.7, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[10.0.0, )"
@@ -899,6 +905,12 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -1215,6 +1227,9 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
+              "C:\\Main\\10p\\Task-Management-Tool\\backend\\TaskManagement.Application\\TaskManagement.Application.csproj": {
+                "projectPath": "C:\\Main\\10p\\Task-Management-Tool\\backend\\TaskManagement.Application\\TaskManagement.Application.csproj"
+              },
               "C:\\Main\\10p\\Task-Management-Tool\\backend\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
                 "projectPath": "C:\\Main\\10p\\Task-Management-Tool\\backend\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
               }
@@ -1250,6 +1265,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[10.0.7, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
