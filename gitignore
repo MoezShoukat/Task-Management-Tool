@@ -1,22 +1,24 @@
-# Node
-node_modules/
+# Build output
+**/bin/
+**/obj/
 
-# React
-dist/
-build/
-
-# .NET
-bin/
-obj/
-
-# VS
+# User-specific files
+*.user
+*.suo
 .vs/
 
-# VS Code
-.vscode/
+# Node
+node_modules/
+frontend/task-management/dist/
 
 # Logs
+logs/
 *.log
 
-# Env
+# Environment
 .env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
