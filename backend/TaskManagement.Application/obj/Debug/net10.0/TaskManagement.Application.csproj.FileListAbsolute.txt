@@ -1,0 +1,15 @@
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\bin\Debug\net10.0\TaskManagement.Application.deps.json
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\bin\Debug\net10.0\TaskManagement.Application.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\bin\Debug\net10.0\TaskManagement.Application.pdb
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\bin\Debug\net10.0\TaskManagement.Domain.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\bin\Debug\net10.0\TaskManagement.Domain.pdb
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\TaskManagement.Application.csproj.AssemblyReference.cache
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\TaskManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\TaskManagement.Application.AssemblyInfoInputs.cache
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\TaskManagement.Application.AssemblyInfo.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\TaskManagement.Application.csproj.CoreCompileInputs.cache
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\TaskMana.B5C26166.Up2Date
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\TaskManagement.Application.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\refint\TaskManagement.Application.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\TaskManagement.Application.pdb
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\ref\TaskManagement.Application.dll

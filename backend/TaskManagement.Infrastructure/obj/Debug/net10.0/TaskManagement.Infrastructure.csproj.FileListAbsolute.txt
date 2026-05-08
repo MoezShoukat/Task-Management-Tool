@@ -1,0 +1,17 @@
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\bin\Debug\net10.0\TaskManagement.Infrastructure.deps.json
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\bin\Debug\net10.0\TaskManagement.Infrastructure.runtimeconfig.json
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\bin\Debug\net10.0\TaskManagement.Infrastructure.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\bin\Debug\net10.0\TaskManagement.Infrastructure.pdb
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\bin\Debug\net10.0\TaskManagement.Domain.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\bin\Debug\net10.0\TaskManagement.Domain.pdb
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.AssemblyInfo.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskMana.BCA0E1A6.Up2Date
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\refint\TaskManagement.Infrastructure.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.pdb
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.genruntimeconfig.cache
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\ref\TaskManagement.Infrastructure.dll

@@ -1,0 +1,11 @@
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\bin\Debug\net10.0\TaskManagement.Domain.deps.json
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\bin\Debug\net10.0\TaskManagement.Domain.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\bin\Debug\net10.0\TaskManagement.Domain.pdb
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.AssemblyInfoInputs.cache
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.AssemblyInfo.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\obj\Debug\net10.0\refint\TaskManagement.Domain.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.pdb
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\obj\Debug\net10.0\ref\TaskManagement.Domain.dll
