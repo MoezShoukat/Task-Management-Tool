@@ -180,3 +180,6 @@ C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\bin\Debug\net10.0\ru
 C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\bin\Debug\net10.0\Scrutor.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

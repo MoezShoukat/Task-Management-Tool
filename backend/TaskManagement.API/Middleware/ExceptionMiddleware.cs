@@ -19,6 +19,11 @@ public class ExceptionMiddleware
         {
             await _next(context);
         }
+        catch (KeyNotFoundException ex)
+        {
+            Log.Warning("Resource not found: {Message}", ex.Message);
+            await WriteErrorResponse(context, HttpStatusCode.NotFound, ex.Message);
+        }
         catch (InvalidOperationException ex)
         {
             Log.Warning("Business rule violation: {Message}", ex.Message);
