@@ -9,6 +9,7 @@ using TaskManagement.Application.Interfaces;
 using TaskManagement.Domain.Entities;
 using TaskManagement.Infrastructure.Data;
 using TaskManagement.Infrastructure.Services;
+using TaskManagement.Application.Interfaces;
 
 // ── Serilog Bootstrap ────────────────────────────────────────────────
 Log.Logger = new LoggerConfiguration()
@@ -75,6 +76,7 @@ try
 
     // ── Services ──────────────────────────────────────────────────────
     builder.Services.AddScoped<IAuthService, AuthService>();
+    builder.Services.AddScoped<ITaskService, TaskService>(); 
     builder.Services.AddControllers();
 
    // ── Swagger ───────────────────────────────────────────────────────
