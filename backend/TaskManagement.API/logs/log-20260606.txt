@@ -455,3 +455,1343 @@ WHERE [a].[NormalizedEmail] = @normalizedEmail
 2026-06-06 21:13:51 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/favicon-32x32.png - 304 null null 3.0871ms
 2026-06-06 21:13:51 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 100.198ms
 2026-06-06 21:15:18 [INF] Application is shutting down...
+2026-06-06 23:29:41 [INF] Starting Task Management API
+2026-06-06 23:29:41 [INF] User profile is available. Using 'C:\Users\PMLS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-06 23:29:42 [INF] Executed DbCommand (38ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-06-06 23:29:42 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-06-06 23:29:42 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-06-06 23:29:42 [INF] Now listening on: http://localhost:5258
+2026-06-06 23:29:42 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-06 23:29:42 [INF] Hosting environment: Development
+2026-06-06 23:29:42 [INF] Content root path: C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API
+2026-06-06 23:29:48 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/index.html - null null
+2026-06-06 23:29:48 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/index.html - 304 null null 68.3023ms
+2026-06-06 23:29:48 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/index.css - null null
+2026-06-06 23:29:48 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-bundle.js - null null
+2026-06-06 23:29:48 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui.css - null null
+2026-06-06 23:29:48 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-06 23:29:48 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/index.js - null null
+2026-06-06 23:29:48 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/index.css - 304 null null 14.4797ms
+2026-06-06 23:29:48 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/index.js - 304 null null 13.6779ms
+2026-06-06 23:29:48 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-standalone-preset.js - 304 null null 14.0225ms
+2026-06-06 23:29:48 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui.css - 304 null null 14.3343ms
+2026-06-06 23:29:48 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-bundle.js - 304 null null 19.3065ms
+2026-06-06 23:29:48 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/v1/swagger.json - null null
+2026-06-06 23:29:48 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/favicon-32x32.png - null null
+2026-06-06 23:29:48 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/favicon-32x32.png - 304 null null 2.8993ms
+2026-06-06 23:29:48 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.9007ms
+2026-06-06 23:30:01 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/auth/login - null null
+2026-06-06 23:30:01 [INF] CORS policy execution successful.
+2026-06-06 23:30:01 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/auth/login - 204 null null 9.6458ms
+2026-06-06 23:30:01 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/auth/login - application/json 57
+2026-06-06 23:30:01 [INF] CORS policy execution successful.
+2026-06-06 23:30:01 [INF] Executing endpoint 'TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API)'
+2026-06-06 23:30:01 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManagement.Application.DTOs.LoginRequest) on controller TaskManagement.API.Controllers.AuthController (TaskManagement.API).
+2026-06-06 23:30:01 [INF] Login attempt for email: admin@taskmanager.com
+2026-06-06 23:30:01 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-06-06 23:30:01 [INF] Login successful for: admin@taskmanager.com
+2026-06-06 23:30:01 [INF] Executed DbCommand (4ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-06-06 23:30:01 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-06 23:30:02 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.AuthResponse'.
+2026-06-06 23:30:02 [INF] Executed action TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API) in 481.0933ms
+2026-06-06 23:30:02 [INF] Executed endpoint 'TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API)'
+2026-06-06 23:30:02 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/auth/login - 200 null application/json; charset=utf-8 548.5652ms
+2026-06-06 23:30:02 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:30:02 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:30:02 [INF] CORS policy execution successful.
+2026-06-06 23:30:02 [INF] CORS policy execution successful.
+2026-06-06 23:30:02 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 8.0017ms
+2026-06-06 23:30:02 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 7.9693ms
+2026-06-06 23:30:02 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:30:02 [INF] CORS policy execution successful.
+2026-06-06 23:30:02 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:02 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:02 [INF] Fetching task summary for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:30:02 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Pending'
+2026-06-06 23:30:02 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'InProgress'
+2026-06-06 23:30:02 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Completed'
+2026-06-06 23:30:02 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:30:02 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 108.647ms
+2026-06-06 23:30:02 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:30:02 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:02 [INF] CORS policy execution successful.
+2026-06-06 23:30:02 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 190.479ms
+2026-06-06 23:30:02 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:02 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:02 [INF] Fetching task summary for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:30:02 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Pending'
+2026-06-06 23:30:02 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'InProgress'
+2026-06-06 23:30:02 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Completed'
+2026-06-06 23:30:02 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:30:02 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 16.5149ms
+2026-06-06 23:30:02 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:02 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 37.3214ms
+2026-06-06 23:30:04 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:30:04 [INF] CORS policy execution successful.
+2026-06-06 23:30:04 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:30:04 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 3.6936ms
+2026-06-06 23:30:04 [INF] CORS policy execution successful.
+2026-06-06 23:30:04 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:30:04 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 9.3037ms
+2026-06-06 23:30:04 [INF] CORS policy execution successful.
+2026-06-06 23:30:04 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:04 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:04 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:30:04 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:30:04 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:30:04 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 81.9484ms
+2026-06-06 23:30:04 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:30:04 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:04 [INF] CORS policy execution successful.
+2026-06-06 23:30:04 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 108.8454ms
+2026-06-06 23:30:04 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:04 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:04 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:30:04 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:30:04 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:30:04 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 7.9479ms
+2026-06-06 23:30:04 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:04 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 20.3809ms
+2026-06-06 23:30:21 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:30:21 [INF] CORS policy execution successful.
+2026-06-06 23:30:21 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 4.0952ms
+2026-06-06 23:30:21 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/task - application/json 135
+2026-06-06 23:30:21 [INF] CORS policy execution successful.
+2026-06-06 23:30:21 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.Create (TaskManagement.API)'
+2026-06-06 23:30:21 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagement.Application.DTOs.CreateTaskRequest) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:21 [INF] Creating task 'avcd' by user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:30:21 [INF] Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-06-06 23:30:21 [INF] Executed action TaskManagement.API.Controllers.TaskController.Create (TaskManagement.API) in 43.4926ms
+2026-06-06 23:30:21 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.Create (TaskManagement.API)'
+2026-06-06 23:30:21 [WRN] Business rule violation: Assigned user not found.
+2026-06-06 23:30:21 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/task - 400 null application/json 65.6244ms
+2026-06-06 23:30:25 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/task - application/json 134
+2026-06-06 23:30:25 [INF] CORS policy execution successful.
+2026-06-06 23:30:25 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.Create (TaskManagement.API)'
+2026-06-06 23:30:25 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagement.Application.DTOs.CreateTaskRequest) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:25 [INF] Creating task 'avcd' by user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:30:25 [INF] Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-06-06 23:30:25 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 100), @p2='?' (DbType = DateTime2), @p3='?' (Size = 450), @p4='?' (Size = 2000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 200), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([AssignedToUserId], [Category], [CreatedAt], [CreatedByUserId], [Description], [DueDate], [Priority], [Status], [Title], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2026-06-06 23:30:25 [INF] Executed DbCommand (15ms) [Parameters=[@task_Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @task_Id
+2026-06-06 23:30:25 [INF] Task 1 created successfully
+2026-06-06 23:30:25 [INF] Executing CreatedAtActionResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:30:25 [INF] Executed action TaskManagement.API.Controllers.TaskController.Create (TaskManagement.API) in 130.334ms
+2026-06-06 23:30:25 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.Create (TaskManagement.API)'
+2026-06-06 23:30:25 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/task - 201 null application/json; charset=utf-8 142.1423ms
+2026-06-06 23:30:25 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/1 - null null
+2026-06-06 23:30:25 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/1 - null null
+2026-06-06 23:30:25 [INF] CORS policy execution successful.
+2026-06-06 23:30:25 [INF] CORS policy execution successful.
+2026-06-06 23:30:25 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/1 - 204 null null 6.9377ms
+2026-06-06 23:30:25 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/1 - 204 null null 6.9227ms
+2026-06-06 23:30:25 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/1 - null null
+2026-06-06 23:30:25 [INF] CORS policy execution successful.
+2026-06-06 23:30:25 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:30:25 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:25 [INF] Fetching task 1 for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:30:25 [INF] Executed DbCommand (3ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:30:25 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:30:25 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 32.7111ms
+2026-06-06 23:30:25 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/1 - null null
+2026-06-06 23:30:25 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:30:25 [INF] CORS policy execution successful.
+2026-06-06 23:30:25 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/1 - 200 null application/json; charset=utf-8 51.7716ms
+2026-06-06 23:30:25 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:30:25 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:25 [INF] Fetching task 1 for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:30:25 [INF] Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:30:25 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:30:25 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 7.5647ms
+2026-06-06 23:30:25 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:30:25 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/1 - 200 null application/json; charset=utf-8 19.7783ms
+2026-06-06 23:30:32 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:30:32 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:30:32 [INF] CORS policy execution successful.
+2026-06-06 23:30:32 [INF] CORS policy execution successful.
+2026-06-06 23:30:32 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 9.0048ms
+2026-06-06 23:30:32 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 9.6495ms
+2026-06-06 23:30:32 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:30:32 [INF] CORS policy execution successful.
+2026-06-06 23:30:32 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:32 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:32 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:30:32 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:30:32 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:30:32 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 13.1621ms
+2026-06-06 23:30:32 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:30:32 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:32 [INF] CORS policy execution successful.
+2026-06-06 23:30:32 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 24.5925ms
+2026-06-06 23:30:32 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:32 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:32 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:30:32 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:30:32 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:30:32 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 7.7717ms
+2026-06-06 23:30:32 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:32 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 19.8685ms
+2026-06-06 23:30:33 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:30:33 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:30:33 [INF] CORS policy execution successful.
+2026-06-06 23:30:33 [INF] CORS policy execution successful.
+2026-06-06 23:30:33 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 6.5276ms
+2026-06-06 23:30:33 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 9.762ms
+2026-06-06 23:30:33 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:30:33 [INF] CORS policy execution successful.
+2026-06-06 23:30:33 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:33 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:33 [INF] Fetching task summary for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:30:33 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Pending'
+2026-06-06 23:30:33 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'InProgress'
+2026-06-06 23:30:33 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Completed'
+2026-06-06 23:30:33 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:30:33 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 25.7437ms
+2026-06-06 23:30:33 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:30:33 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:33 [INF] CORS policy execution successful.
+2026-06-06 23:30:33 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 37.2623ms
+2026-06-06 23:30:33 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:33 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:33 [INF] Fetching task summary for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:30:33 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Pending'
+2026-06-06 23:30:33 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'InProgress'
+2026-06-06 23:30:33 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Completed'
+2026-06-06 23:30:33 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:30:33 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 12.6212ms
+2026-06-06 23:30:33 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:33 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 25.7182ms
+2026-06-06 23:30:34 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:30:34 [INF] CORS policy execution successful.
+2026-06-06 23:30:34 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:34 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:34 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:30:34 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:30:34 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:30:34 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 7.9747ms
+2026-06-06 23:30:34 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:30:34 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:34 [INF] CORS policy execution successful.
+2026-06-06 23:30:34 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 23.2645ms
+2026-06-06 23:30:34 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:34 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:34 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:30:34 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:30:34 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:30:34 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 7.6475ms
+2026-06-06 23:30:34 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:34 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 23.0854ms
+2026-06-06 23:30:35 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:30:35 [INF] CORS policy execution successful.
+2026-06-06 23:30:35 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:35 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:35 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:30:35 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:30:35 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:30:35 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 7.7789ms
+2026-06-06 23:30:35 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:30:35 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:35 [INF] CORS policy execution successful.
+2026-06-06 23:30:35 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 20.4523ms
+2026-06-06 23:30:35 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:35 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:35 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:30:35 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:30:35 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:30:35 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 5.7302ms
+2026-06-06 23:30:35 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:30:35 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 18.1172ms
+2026-06-06 23:30:35 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:30:35 [INF] CORS policy execution successful.
+2026-06-06 23:30:35 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:35 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:35 [INF] Fetching task summary for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:30:35 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Pending'
+2026-06-06 23:30:35 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'InProgress'
+2026-06-06 23:30:35 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Completed'
+2026-06-06 23:30:35 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:30:35 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 12.2462ms
+2026-06-06 23:30:35 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:30:35 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:35 [INF] CORS policy execution successful.
+2026-06-06 23:30:35 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 24.4926ms
+2026-06-06 23:30:35 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:35 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:30:35 [INF] Fetching task summary for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:30:35 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Pending'
+2026-06-06 23:30:35 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'InProgress'
+2026-06-06 23:30:35 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Completed'
+2026-06-06 23:30:35 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:30:35 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 10.9341ms
+2026-06-06 23:30:35 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:30:35 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 23.1503ms
+2026-06-06 23:31:02 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/auth/register - null null
+2026-06-06 23:31:02 [INF] CORS policy execution successful.
+2026-06-06 23:31:02 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/auth/register - 204 null null 3.6004ms
+2026-06-06 23:31:02 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/auth/register - application/json 104
+2026-06-06 23:31:02 [INF] CORS policy execution successful.
+2026-06-06 23:31:02 [INF] Executing endpoint 'TaskManagement.API.Controllers.AuthController.Register (TaskManagement.API)'
+2026-06-06 23:31:02 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskManagement.Application.DTOs.RegisterRequest) on controller TaskManagement.API.Controllers.AuthController (TaskManagement.API).
+2026-06-06 23:31:02 [INF] Registration attempt for email: bl4nkstriker@gmail.com
+2026-06-06 23:31:02 [INF] Executed DbCommand (4ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-06-06 23:31:02 [WRN] Registration failed - email already exists: bl4nkstriker@gmail.com
+2026-06-06 23:31:02 [INF] Executed action TaskManagement.API.Controllers.AuthController.Register (TaskManagement.API) in 15.6337ms
+2026-06-06 23:31:02 [INF] Executed endpoint 'TaskManagement.API.Controllers.AuthController.Register (TaskManagement.API)'
+2026-06-06 23:31:02 [WRN] Business rule violation: A user with this email already exists.
+2026-06-06 23:31:02 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/auth/register - 400 null application/json 31.385ms
+2026-06-06 23:31:18 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/auth/login - null null
+2026-06-06 23:31:18 [INF] CORS policy execution successful.
+2026-06-06 23:31:18 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/auth/login - 204 null null 3.8179ms
+2026-06-06 23:31:18 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/auth/login - application/json 63
+2026-06-06 23:31:18 [INF] CORS policy execution successful.
+2026-06-06 23:31:18 [INF] Executing endpoint 'TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API)'
+2026-06-06 23:31:18 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManagement.Application.DTOs.LoginRequest) on controller TaskManagement.API.Controllers.AuthController (TaskManagement.API).
+2026-06-06 23:31:18 [INF] Login attempt for email: bl4nkstriker@gmail.com
+2026-06-06 23:31:18 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-06-06 23:31:19 [INF] Login successful for: bl4nkstriker@gmail.com
+2026-06-06 23:31:19 [INF] Executed DbCommand (5ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-06-06 23:31:19 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-06 23:31:19 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.AuthResponse'.
+2026-06-06 23:31:19 [INF] Executed action TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API) in 105.0847ms
+2026-06-06 23:31:19 [INF] Executed endpoint 'TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API)'
+2026-06-06 23:31:19 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/auth/login - 200 null application/json; charset=utf-8 112.9078ms
+2026-06-06 23:31:19 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:19 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:19 [INF] CORS policy execution successful.
+2026-06-06 23:31:19 [INF] CORS policy execution successful.
+2026-06-06 23:31:19 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 7.7423ms
+2026-06-06 23:31:19 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 8.336ms
+2026-06-06 23:31:19 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:19 [INF] CORS policy execution successful.
+2026-06-06 23:31:19 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:19 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:19 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:19 [INF] Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:31:19 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:31:19 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:31:19 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:31:19 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 32.5704ms
+2026-06-06 23:31:19 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:19 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:19 [INF] CORS policy execution successful.
+2026-06-06 23:31:19 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 43.4172ms
+2026-06-06 23:31:19 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:19 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:19 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:19 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:31:19 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:31:19 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:31:19 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:31:19 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 11.663ms
+2026-06-06 23:31:19 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:19 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 22.8346ms
+2026-06-06 23:31:22 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:31:22 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:31:22 [INF] CORS policy execution successful.
+2026-06-06 23:31:22 [INF] CORS policy execution successful.
+2026-06-06 23:31:22 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 12.8029ms
+2026-06-06 23:31:22 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 11.5899ms
+2026-06-06 23:31:22 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:31:22 [INF] CORS policy execution successful.
+2026-06-06 23:31:22 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:22 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:22 [INF] Fetching tasks for user 57273da8-25e6-4c69-9e36-3eaa297699b8 with role User
+2026-06-06 23:31:22 [INF] Executed DbCommand (6ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:31:22 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:31:22 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 24.21ms
+2026-06-06 23:31:22 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:31:22 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:22 [INF] CORS policy execution successful.
+2026-06-06 23:31:22 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 41.5462ms
+2026-06-06 23:31:22 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:22 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:22 [INF] Fetching tasks for user 57273da8-25e6-4c69-9e36-3eaa297699b8 with role User
+2026-06-06 23:31:22 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:31:22 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:31:22 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 5.366ms
+2026-06-06 23:31:22 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:22 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 17.9286ms
+2026-06-06 23:31:23 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:24 [INF] CORS policy execution successful.
+2026-06-06 23:31:24 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:24 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:24 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:24 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:31:24 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:31:24 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:31:24 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:31:24 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 15.34ms
+2026-06-06 23:31:24 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:24 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:24 [INF] CORS policy execution successful.
+2026-06-06 23:31:24 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 30.4732ms
+2026-06-06 23:31:24 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:24 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:24 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:24 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:31:24 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:31:24 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:31:24 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:31:24 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 16.703ms
+2026-06-06 23:31:24 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:24 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 32.3667ms
+2026-06-06 23:31:24 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:31:24 [INF] CORS policy execution successful.
+2026-06-06 23:31:24 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:24 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:24 [INF] Fetching tasks for user 57273da8-25e6-4c69-9e36-3eaa297699b8 with role User
+2026-06-06 23:31:24 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:31:24 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:31:24 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 7.5156ms
+2026-06-06 23:31:24 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:31:24 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:24 [INF] CORS policy execution successful.
+2026-06-06 23:31:24 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 18.8358ms
+2026-06-06 23:31:24 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:24 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:24 [INF] Fetching tasks for user 57273da8-25e6-4c69-9e36-3eaa297699b8 with role User
+2026-06-06 23:31:24 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:31:24 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:31:24 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 7.5226ms
+2026-06-06 23:31:24 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:24 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 20.9758ms
+2026-06-06 23:31:38 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:31:38 [INF] CORS policy execution successful.
+2026-06-06 23:31:38 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 6.3001ms
+2026-06-06 23:31:38 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/task - application/json 146
+2026-06-06 23:31:38 [INF] CORS policy execution successful.
+2026-06-06 23:31:38 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.Create (TaskManagement.API)'
+2026-06-06 23:31:38 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagement.Application.DTOs.CreateTaskRequest) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:38 [INF] Creating task 'wewew' by user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:38 [INF] Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @p
+2026-06-06 23:31:38 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 100), @p2='?' (DbType = DateTime2), @p3='?' (Size = 450), @p4='?' (Size = 2000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 200), @p9='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([AssignedToUserId], [Category], [CreatedAt], [CreatedByUserId], [Description], [DueDate], [Priority], [Status], [Title], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2026-06-06 23:31:38 [INF] Executed DbCommand (3ms) [Parameters=[@task_Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @task_Id
+2026-06-06 23:31:38 [INF] Task 2 created successfully
+2026-06-06 23:31:38 [INF] Executing CreatedAtActionResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:31:38 [INF] Executed action TaskManagement.API.Controllers.TaskController.Create (TaskManagement.API) in 19.7896ms
+2026-06-06 23:31:38 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.Create (TaskManagement.API)'
+2026-06-06 23:31:38 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/task - 201 null application/json; charset=utf-8 28.5785ms
+2026-06-06 23:31:38 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - null null
+2026-06-06 23:31:38 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - null null
+2026-06-06 23:31:38 [INF] CORS policy execution successful.
+2026-06-06 23:31:38 [INF] CORS policy execution successful.
+2026-06-06 23:31:38 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - 204 null null 5.1386ms
+2026-06-06 23:31:38 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - 204 null null 5.5314ms
+2026-06-06 23:31:38 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/2 - null null
+2026-06-06 23:31:38 [INF] CORS policy execution successful.
+2026-06-06 23:31:38 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:31:38 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:38 [INF] Fetching task 2 for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:38 [INF] Executed DbCommand (4ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:31:38 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:31:38 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 9.7329ms
+2026-06-06 23:31:38 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/2 - null null
+2026-06-06 23:31:38 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:31:38 [INF] CORS policy execution successful.
+2026-06-06 23:31:38 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/2 - 200 null application/json; charset=utf-8 19.5394ms
+2026-06-06 23:31:38 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:31:38 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:38 [INF] Fetching task 2 for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:38 [INF] Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:31:38 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:31:38 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 6.8013ms
+2026-06-06 23:31:38 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:31:38 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/2 - 200 null application/json; charset=utf-8 17.3614ms
+2026-06-06 23:31:40 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:40 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:40 [INF] CORS policy execution successful.
+2026-06-06 23:31:40 [INF] CORS policy execution successful.
+2026-06-06 23:31:40 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 6.7895ms
+2026-06-06 23:31:40 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 7.4152ms
+2026-06-06 23:31:40 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:40 [INF] CORS policy execution successful.
+2026-06-06 23:31:40 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:40 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:40 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:40 [INF] Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:31:40 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:31:40 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:31:40 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:31:40 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 17.6508ms
+2026-06-06 23:31:40 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:40 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:40 [INF] CORS policy execution successful.
+2026-06-06 23:31:40 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 29.395ms
+2026-06-06 23:31:40 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:40 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:40 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:40 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:31:40 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:31:40 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:31:40 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:31:40 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 15.3652ms
+2026-06-06 23:31:40 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:40 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 29.1475ms
+2026-06-06 23:31:41 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:31:41 [INF] CORS policy execution successful.
+2026-06-06 23:31:41 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:41 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:41 [INF] Fetching tasks for user 57273da8-25e6-4c69-9e36-3eaa297699b8 with role User
+2026-06-06 23:31:41 [INF] Executed DbCommand (5ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:31:41 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:31:41 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 10.9344ms
+2026-06-06 23:31:41 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:31:41 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:41 [INF] CORS policy execution successful.
+2026-06-06 23:31:41 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 21.7239ms
+2026-06-06 23:31:41 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:41 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:41 [INF] Fetching tasks for user 57273da8-25e6-4c69-9e36-3eaa297699b8 with role User
+2026-06-06 23:31:41 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:31:41 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:31:41 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 7.3078ms
+2026-06-06 23:31:41 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:41 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 18.0638ms
+2026-06-06 23:31:44 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:44 [INF] CORS policy execution successful.
+2026-06-06 23:31:44 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:44 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:44 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:44 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:31:44 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:31:44 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:31:44 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:31:44 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 12.1169ms
+2026-06-06 23:31:44 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:44 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:44 [INF] CORS policy execution successful.
+2026-06-06 23:31:44 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 25.7611ms
+2026-06-06 23:31:44 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:44 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:44 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:44 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:31:44 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:31:44 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:31:44 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:31:44 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 11.0324ms
+2026-06-06 23:31:44 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:44 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 24.1911ms
+2026-06-06 23:31:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - null null
+2026-06-06 23:31:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - null null
+2026-06-06 23:31:45 [INF] CORS policy execution successful.
+2026-06-06 23:31:45 [INF] CORS policy execution successful.
+2026-06-06 23:31:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - 204 null null 6.0133ms
+2026-06-06 23:31:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - 204 null null 6.6735ms
+2026-06-06 23:31:45 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/2 - null null
+2026-06-06 23:31:45 [INF] CORS policy execution successful.
+2026-06-06 23:31:45 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:31:45 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:45 [INF] Fetching task 2 for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:45 [INF] Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:31:45 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:31:45 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 5.8627ms
+2026-06-06 23:31:45 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/2 - null null
+2026-06-06 23:31:45 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:31:45 [INF] CORS policy execution successful.
+2026-06-06 23:31:45 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/2 - 200 null application/json; charset=utf-8 16.653ms
+2026-06-06 23:31:45 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:31:45 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:45 [INF] Fetching task 2 for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:31:45 [INF] Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:31:45 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:31:45 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 5.9755ms
+2026-06-06 23:31:45 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:31:45 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/2 - 200 null application/json; charset=utf-8 18.587ms
+2026-06-06 23:31:58 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/auth/login - null null
+2026-06-06 23:31:58 [INF] CORS policy execution successful.
+2026-06-06 23:31:58 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/auth/login - 204 null null 3.5993ms
+2026-06-06 23:31:58 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/auth/login - application/json 57
+2026-06-06 23:31:58 [INF] CORS policy execution successful.
+2026-06-06 23:31:58 [INF] Executing endpoint 'TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API)'
+2026-06-06 23:31:58 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManagement.Application.DTOs.LoginRequest) on controller TaskManagement.API.Controllers.AuthController (TaskManagement.API).
+2026-06-06 23:31:58 [INF] Login attempt for email: admin@taskmanager.com
+2026-06-06 23:31:58 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-06-06 23:31:58 [INF] Login successful for: admin@taskmanager.com
+2026-06-06 23:31:58 [INF] Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-06-06 23:31:58 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-06 23:31:58 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.AuthResponse'.
+2026-06-06 23:31:58 [INF] Executed action TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API) in 108.5836ms
+2026-06-06 23:31:58 [INF] Executed endpoint 'TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API)'
+2026-06-06 23:31:58 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/auth/login - 200 null application/json; charset=utf-8 116.4ms
+2026-06-06 23:31:58 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:58 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:58 [INF] CORS policy execution successful.
+2026-06-06 23:31:58 [INF] CORS policy execution successful.
+2026-06-06 23:31:58 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 7.9976ms
+2026-06-06 23:31:58 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 8.1302ms
+2026-06-06 23:31:58 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:58 [INF] CORS policy execution successful.
+2026-06-06 23:31:58 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:58 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:58 [INF] Fetching task summary for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:31:58 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Pending'
+2026-06-06 23:31:58 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'InProgress'
+2026-06-06 23:31:58 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Completed'
+2026-06-06 23:31:58 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:31:58 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 12.8867ms
+2026-06-06 23:31:58 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:31:58 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:58 [INF] CORS policy execution successful.
+2026-06-06 23:31:58 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 24.4131ms
+2026-06-06 23:31:58 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:58 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:58 [INF] Fetching task summary for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:31:58 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Pending'
+2026-06-06 23:31:58 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'InProgress'
+2026-06-06 23:31:58 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE [t].[Status] = N'Completed'
+2026-06-06 23:31:58 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:31:58 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 11.6529ms
+2026-06-06 23:31:58 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:31:58 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 22.7199ms
+2026-06-06 23:31:59 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:31:59 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:31:59 [INF] CORS policy execution successful.
+2026-06-06 23:31:59 [INF] CORS policy execution successful.
+2026-06-06 23:31:59 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 7.2069ms
+2026-06-06 23:31:59 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 7.7324ms
+2026-06-06 23:31:59 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:31:59 [INF] CORS policy execution successful.
+2026-06-06 23:31:59 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:59 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:59 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:31:59 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:31:59 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:31:59 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 9.8683ms
+2026-06-06 23:31:59 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:31:59 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:59 [INF] CORS policy execution successful.
+2026-06-06 23:31:59 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 19.1432ms
+2026-06-06 23:31:59 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:59 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:31:59 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:31:59 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:31:59 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:31:59 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 7.021ms
+2026-06-06 23:31:59 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:31:59 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 18.6432ms
+2026-06-06 23:32:04 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - null null
+2026-06-06 23:32:04 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - null null
+2026-06-06 23:32:04 [INF] CORS policy execution successful.
+2026-06-06 23:32:04 [INF] CORS policy execution successful.
+2026-06-06 23:32:04 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - 204 null null 7.569ms
+2026-06-06 23:32:04 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - 204 null null 8.2169ms
+2026-06-06 23:32:04 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/2 - null null
+2026-06-06 23:32:04 [INF] CORS policy execution successful.
+2026-06-06 23:32:04 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:04 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:04 [INF] Fetching task 2 for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:32:04 [INF] Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:32:04 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:32:04 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 6.2548ms
+2026-06-06 23:32:04 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/2 - null null
+2026-06-06 23:32:04 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:04 [INF] CORS policy execution successful.
+2026-06-06 23:32:04 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/2 - 200 null application/json; charset=utf-8 17.9648ms
+2026-06-06 23:32:04 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:04 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:04 [INF] Fetching task 2 for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:32:04 [INF] Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:32:04 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:32:04 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 5.4646ms
+2026-06-06 23:32:04 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:04 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/2 - 200 null application/json; charset=utf-8 17.4401ms
+2026-06-06 23:32:06 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:32:06 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:32:06 [INF] CORS policy execution successful.
+2026-06-06 23:32:06 [INF] CORS policy execution successful.
+2026-06-06 23:32:06 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 8.4177ms
+2026-06-06 23:32:06 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 9.2722ms
+2026-06-06 23:32:06 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:32:06 [INF] CORS policy execution successful.
+2026-06-06 23:32:06 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:06 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:06 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:32:06 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:32:06 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:32:06 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 6.3883ms
+2026-06-06 23:32:06 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:32:06 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:06 [INF] CORS policy execution successful.
+2026-06-06 23:32:06 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 18.444ms
+2026-06-06 23:32:06 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:06 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:06 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:32:06 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:32:07 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:32:07 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 5.6191ms
+2026-06-06 23:32:07 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:07 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 18.0751ms
+2026-06-06 23:32:08 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/1 - null null
+2026-06-06 23:32:08 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/1 - null null
+2026-06-06 23:32:08 [INF] CORS policy execution successful.
+2026-06-06 23:32:08 [INF] CORS policy execution successful.
+2026-06-06 23:32:08 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/1 - 204 null null 6.9914ms
+2026-06-06 23:32:08 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/1 - 204 null null 5.9041ms
+2026-06-06 23:32:08 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/1 - null null
+2026-06-06 23:32:08 [INF] CORS policy execution successful.
+2026-06-06 23:32:08 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:08 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:08 [INF] Fetching task 1 for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:32:08 [INF] Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:32:08 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:32:08 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 6.5503ms
+2026-06-06 23:32:08 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/1 - null null
+2026-06-06 23:32:08 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:08 [INF] CORS policy execution successful.
+2026-06-06 23:32:08 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/1 - 200 null application/json; charset=utf-8 15.8071ms
+2026-06-06 23:32:08 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:08 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:08 [INF] Fetching task 1 for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:32:08 [INF] Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:32:08 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:32:08 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 6.5002ms
+2026-06-06 23:32:08 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:08 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/1 - 200 null application/json; charset=utf-8 17.6147ms
+2026-06-06 23:32:09 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:32:09 [INF] CORS policy execution successful.
+2026-06-06 23:32:09 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:09 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:09 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:32:09 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:32:09 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:32:09 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 10.8517ms
+2026-06-06 23:32:09 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:32:09 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:09 [INF] CORS policy execution successful.
+2026-06-06 23:32:09 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 24.5982ms
+2026-06-06 23:32:09 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:09 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:09 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:32:09 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:32:09 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:32:09 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 6.6595ms
+2026-06-06 23:32:09 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:09 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 20.7888ms
+2026-06-06 23:32:21 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - null null
+2026-06-06 23:32:21 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - null null
+2026-06-06 23:32:21 [INF] CORS policy execution successful.
+2026-06-06 23:32:21 [INF] CORS policy execution successful.
+2026-06-06 23:32:21 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - 204 null null 6.1222ms
+2026-06-06 23:32:21 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - 204 null null 6.948ms
+2026-06-06 23:32:21 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/2 - null null
+2026-06-06 23:32:21 [INF] CORS policy execution successful.
+2026-06-06 23:32:21 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:21 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:21 [INF] Fetching task 2 for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:32:21 [INF] Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:32:21 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:32:21 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 6.3182ms
+2026-06-06 23:32:21 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/2 - null null
+2026-06-06 23:32:21 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:21 [INF] CORS policy execution successful.
+2026-06-06 23:32:21 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/2 - 200 null application/json; charset=utf-8 17.2257ms
+2026-06-06 23:32:21 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:21 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:21 [INF] Fetching task 2 for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:32:21 [INF] Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[Id] = @id
+2026-06-06 23:32:21 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskDto'.
+2026-06-06 23:32:21 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API) in 5.3443ms
+2026-06-06 23:32:21 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetById (TaskManagement.API)'
+2026-06-06 23:32:21 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/2 - 200 null application/json; charset=utf-8 17.0469ms
+2026-06-06 23:32:21 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:32:21 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:32:21 [INF] CORS policy execution successful.
+2026-06-06 23:32:21 [INF] CORS policy execution successful.
+2026-06-06 23:32:21 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 6.7294ms
+2026-06-06 23:32:21 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 6.0503ms
+2026-06-06 23:32:21 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:32:21 [INF] CORS policy execution successful.
+2026-06-06 23:32:21 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:21 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:21 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:32:21 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:32:21 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:32:21 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 6.1255ms
+2026-06-06 23:32:21 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:32:21 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:21 [INF] CORS policy execution successful.
+2026-06-06 23:32:21 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 16.5382ms
+2026-06-06 23:32:21 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:21 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:21 [INF] Fetching tasks for user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8 with role Admin
+2026-06-06 23:32:21 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:32:21 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:32:21 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 6.8684ms
+2026-06-06 23:32:21 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:21 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 18.4108ms
+2026-06-06 23:32:24 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - null null
+2026-06-06 23:32:24 [INF] CORS policy execution successful.
+2026-06-06 23:32:24 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/2 - 204 null null 3.2744ms
+2026-06-06 23:32:24 [INF] Request starting HTTP/1.1 DELETE http://localhost:5258/api/task/2 - null null
+2026-06-06 23:32:24 [INF] CORS policy execution successful.
+2026-06-06 23:32:24 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.Delete (TaskManagement.API)'
+2026-06-06 23:32:24 [INF] Route matched with {action = "Delete", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:24 [INF] Deleting task 2 by user 876ad02a-8aa2-4619-a1b0-28bdd73eb1f8
+2026-06-06 23:32:24 [INF] Executed DbCommand (2ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @p
+2026-06-06 23:32:24 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Tasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-06-06 23:32:24 [INF] Task 2 deleted successfully
+2026-06-06 23:32:24 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-06-06 23:32:24 [INF] Executed action TaskManagement.API.Controllers.TaskController.Delete (TaskManagement.API) in 36.6126ms
+2026-06-06 23:32:24 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.Delete (TaskManagement.API)'
+2026-06-06 23:32:24 [INF] Request finished HTTP/1.1 DELETE http://localhost:5258/api/task/2 - 204 null null 53.7709ms
+2026-06-06 23:32:43 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/auth/login - null null
+2026-06-06 23:32:43 [INF] CORS policy execution successful.
+2026-06-06 23:32:43 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/auth/login - 204 null null 3.6028ms
+2026-06-06 23:32:43 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/auth/login - application/json 63
+2026-06-06 23:32:43 [INF] CORS policy execution successful.
+2026-06-06 23:32:43 [INF] Executing endpoint 'TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API)'
+2026-06-06 23:32:43 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManagement.Application.DTOs.LoginRequest) on controller TaskManagement.API.Controllers.AuthController (TaskManagement.API).
+2026-06-06 23:32:43 [INF] Login attempt for email: bl4nkstriker@gmail.com
+2026-06-06 23:32:43 [INF] Executed DbCommand (5ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-06-06 23:32:43 [INF] Login successful for: bl4nkstriker@gmail.com
+2026-06-06 23:32:43 [INF] Executed DbCommand (4ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-06-06 23:32:43 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-06 23:32:43 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.AuthResponse'.
+2026-06-06 23:32:43 [INF] Executed action TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API) in 101.5695ms
+2026-06-06 23:32:43 [INF] Executed endpoint 'TaskManagement.API.Controllers.AuthController.Login (TaskManagement.API)'
+2026-06-06 23:32:43 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/auth/login - 200 null application/json; charset=utf-8 109.034ms
+2026-06-06 23:32:43 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:32:43 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - null null
+2026-06-06 23:32:43 [INF] CORS policy execution successful.
+2026-06-06 23:32:43 [INF] CORS policy execution successful.
+2026-06-06 23:32:43 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 6.2363ms
+2026-06-06 23:32:43 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task/summary - 204 null null 5.682ms
+2026-06-06 23:32:43 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:32:43 [INF] CORS policy execution successful.
+2026-06-06 23:32:43 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:32:43 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:43 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:32:43 [INF] Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:32:43 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:32:43 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:32:43 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:32:43 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 17.4325ms
+2026-06-06 23:32:43 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:32:43 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:32:43 [INF] CORS policy execution successful.
+2026-06-06 23:32:43 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 28.8421ms
+2026-06-06 23:32:43 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:32:43 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:43 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:32:43 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:32:43 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:32:43 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:32:43 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:32:43 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 11.4587ms
+2026-06-06 23:32:43 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:32:43 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 23.1048ms
+2026-06-06 23:32:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:32:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/task - null null
+2026-06-06 23:32:45 [INF] CORS policy execution successful.
+2026-06-06 23:32:45 [INF] CORS policy execution successful.
+2026-06-06 23:32:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 7.2384ms
+2026-06-06 23:32:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/task - 204 null null 8.0585ms
+2026-06-06 23:32:45 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:32:45 [INF] CORS policy execution successful.
+2026-06-06 23:32:45 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:45 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:45 [INF] Fetching tasks for user 57273da8-25e6-4c69-9e36-3eaa297699b8 with role User
+2026-06-06 23:32:45 [INF] Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:32:45 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:32:45 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 9.4514ms
+2026-06-06 23:32:45 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task - null null
+2026-06-06 23:32:45 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:45 [INF] CORS policy execution successful.
+2026-06-06 23:32:45 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 21.928ms
+2026-06-06 23:32:45 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:45 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:45 [INF] Fetching tasks for user 57273da8-25e6-4c69-9e36-3eaa297699b8 with role User
+2026-06-06 23:32:45 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedToUserId], [t].[Category], [t].[CreatedAt], [t].[CreatedByUserId], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title], [t].[UpdatedAt], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName], [a0].[Id], [a0].[AccessFailedCount], [a0].[ConcurrencyStamp], [a0].[CreatedAt], [a0].[Email], [a0].[EmailConfirmed], [a0].[FirstName], [a0].[LastName], [a0].[LockoutEnabled], [a0].[LockoutEnd], [a0].[NormalizedEmail], [a0].[NormalizedUserName], [a0].[PasswordHash], [a0].[PhoneNumber], [a0].[PhoneNumberConfirmed], [a0].[SecurityStamp], [a0].[TwoFactorEnabled], [a0].[UserName]
+FROM [Tasks] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[AssignedToUserId] = [a].[Id]
+INNER JOIN [AspNetUsers] AS [a0] ON [t].[CreatedByUserId] = [a0].[Id]
+WHERE [t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId
+ORDER BY [t].[CreatedAt] DESC
+2026-06-06 23:32:45 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagement.Application.DTOs.TaskDto, TaskManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-06 23:32:45 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API) in 5.9587ms
+2026-06-06 23:32:45 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetAll (TaskManagement.API)'
+2026-06-06 23:32:45 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task - 200 null application/json; charset=utf-8 16.9337ms
+2026-06-06 23:32:47 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:32:47 [INF] CORS policy execution successful.
+2026-06-06 23:32:47 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:32:47 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:47 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:32:47 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:32:47 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:32:47 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:32:47 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:32:47 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 26.4815ms
+2026-06-06 23:32:47 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/task/summary - null null
+2026-06-06 23:32:47 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:32:47 [INF] CORS policy execution successful.
+2026-06-06 23:32:47 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 42.8683ms
+2026-06-06 23:32:47 [INF] Executing endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:32:47 [INF] Route matched with {action = "GetSummary", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSummary() on controller TaskManagement.API.Controllers.TaskController (TaskManagement.API).
+2026-06-06 23:32:47 [INF] Fetching task summary for user 57273da8-25e6-4c69-9e36-3eaa297699b8
+2026-06-06 23:32:47 [INF] Executed DbCommand (0ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Pending'
+2026-06-06 23:32:47 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'InProgress'
+2026-06-06 23:32:47 [INF] Executed DbCommand (1ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Tasks] AS [t]
+WHERE ([t].[AssignedToUserId] = @userId OR [t].[CreatedByUserId] = @userId) AND [t].[Status] = N'Completed'
+2026-06-06 23:32:47 [INF] Executing OkObjectResult, writing value of type 'TaskManagement.Application.DTOs.TaskSummaryDto'.
+2026-06-06 23:32:47 [INF] Executed action TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API) in 13.8759ms
+2026-06-06 23:32:47 [INF] Executed endpoint 'TaskManagement.API.Controllers.TaskController.GetSummary (TaskManagement.API)'
+2026-06-06 23:32:47 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/task/summary - 200 null application/json; charset=utf-8 31.1786ms
+2026-06-06 23:35:32 [INF] Application is shutting down...
