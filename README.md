@@ -76,15 +76,6 @@ npm run dev
 
 Frontend runs on `http://localhost:5173`.
 
-## Logs
-
-Application logs are saved daily to the `logs/` folder in the API project root.
-
-## Git Strategy
-
-- `main` — stable, production-ready code
-- `feature/*` — feature branches, PR into main when complete
-
 ## SonarQube Code Quality
 
 This project uses SonarQube for code quality analysis.
@@ -108,3 +99,15 @@ dotnet sonarscanner end /d:sonar.login="YOUR_TOKEN"
 ```
 
 Results available at: `http://localhost:9000/dashboard?id=task-management-tool`
+
+## Logs
+
+Application logs are saved daily to:
+backend/TaskManagement.API/logs/log-YYYYMMDD.txt
+
+Logs include auth events, task operations, errors and exceptions.
+
+## Git Strategy
+
+- `main` — stable, production-ready code
+- `feature/*` — feature branches, PR into main when complete
