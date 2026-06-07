@@ -13,11 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskManagement.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f89b07935a9ee1c767c9acfb3fa8302c69b5442f")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a74e49b14c65950b2fe089b6499e5d930fdab3c1")]
->>>>>>> feature/task-frontend
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f782f3df58011c396f0ac6d4021e315ab975b3c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskManagement.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskManagement.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
