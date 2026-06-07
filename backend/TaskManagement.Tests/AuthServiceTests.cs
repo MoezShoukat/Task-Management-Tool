@@ -36,7 +36,7 @@ public class AuthServiceTests : IDisposable
         _roleManager.CreateAsync(new IdentityRole("Admin")).GetAwaiter().GetResult();
 
         var config = ConfigurationHelper.GetTestConfiguration();
-        _authService = new AuthService(_userManager, _roleManager, config, _context);
+        _authService = new AuthService(_userManager, config, _context);
     }
 
     // ── Register Tests ───────────────────────────────────────────────

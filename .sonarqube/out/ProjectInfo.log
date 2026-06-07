@@ -1,0 +1,28 @@
+Product projects
+---------------------------------------
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Domain\TaskManagement.Domain.csproj
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\TaskManagement.Application.csproj
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\TaskManagement.Infrastructure.csproj
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\TaskManagement.API.csproj
+
+
+Test projects
+---------------------------------------
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\TaskManagement.Tests.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

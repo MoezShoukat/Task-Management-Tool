@@ -1,0 +1,9 @@
+Z
+QC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\AuthServiceTests.csutf-8e
+\C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\Helpers\ConfigurationHelper.csutf-8f
+]C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\Helpers\TestDbContextFactory.csutf-8Z
+QC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\TaskServiceTests.csutf-8v
+kC:\Users\PMLS\.nuget\packages\microsoft.net.test.sdk\17.14.1\build\net8.0\Microsoft.NET.Test.Sdk.Program.csutf-8
+vC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\obj\Debug\net10.0\TaskManagement.Tests.GlobalUsings.g.csutf-8Š
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.csutf-8
+tC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\obj\Debug\net10.0\TaskManagement.Tests.AssemblyInfo.csutf-8

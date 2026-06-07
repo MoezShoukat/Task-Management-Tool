@@ -84,3 +84,27 @@ Application logs are saved daily to the `logs/` folder in the API project root.
 
 - `main` — stable, production-ready code
 - `feature/*` — feature branches, PR into main when complete
+
+## SonarQube Code Quality
+
+This project uses SonarQube for code quality analysis.
+
+### Prerequisites
+- SonarQube 9.9 LTS running locally at `http://localhost:9000`
+- Java 17
+- dotnet-sonarscanner tool: `dotnet tool install --global dotnet-sonarscanner --version 5.15.0`
+
+### Running Analysis
+
+```bash
+# Set Java path
+$env:JAVA_HOME = "C:\Program Files\Java\jdk-17"
+$env:PATH = "$env:JAVA_HOME\bin;$env:PATH"
+
+# Run analysis (replace YOUR_TOKEN with your SonarQube token)
+dotnet sonarscanner begin /k:"task-management-tool" /d:sonar.host.url="http://localhost:9000" /d:sonar.login="YOUR_TOKEN"
+dotnet build TaskManagement.slnx
+dotnet sonarscanner end /d:sonar.login="YOUR_TOKEN"
+```
+
+Results available at: `http://localhost:9000/dashboard?id=task-management-tool`

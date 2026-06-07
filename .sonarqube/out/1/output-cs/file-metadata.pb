@@ -1,0 +1,13 @@
+a
+XC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\AuthResponse.csutf-8f
+]C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\CreateTaskRequest.csutf-8a
+XC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\LoginRequest.csutf-8d
+[C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\RegisterRequest.csutf-8\
+SC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\TaskDto.csutf-8c
+ZC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\TaskSummaryDto.csutf-8f
+]C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\UpdateTaskRequest.csutf-8g
+^C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\Interfaces\IAuthService.csutf-8g
+^C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\Interfaces\ITaskService.csutf-8Ž
+‚C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\TaskManagement.Application.GlobalUsings.g.csutf-8‘
+…C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.csutf-8Œ
+€C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\obj\Debug\net10.0\TaskManagement.Application.AssemblyInfo.csutf-8

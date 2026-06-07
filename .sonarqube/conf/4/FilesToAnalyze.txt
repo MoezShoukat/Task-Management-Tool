@@ -1,0 +1,14 @@
+﻿C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\Controllers\AuthController.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\Controllers\TaskController.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\Middleware\ExceptionMiddleware.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\Program.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\obj\Debug\net10.0\TaskManagement.API.GlobalUsings.g.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\obj\Debug\net10.0\TaskManagement.API.AssemblyInfo.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\obj\Debug\net10.0\TaskManagement.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\appsettings.Development.json
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\appsettings.json
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\logs\log-20260508.txt
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\logs\log-20260606.txt
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\TaskManagement.API.http
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\Properties\launchSettings.json

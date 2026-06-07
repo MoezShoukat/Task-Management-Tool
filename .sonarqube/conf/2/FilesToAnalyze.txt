@@ -1,0 +1,8 @@
+﻿C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Data\AppDbContext.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Migrations\20260508052650_InitialCreate.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Migrations\20260508052650_InitialCreate.Designer.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Migrations\20260606153802_AddTaskItem.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Migrations\20260606153802_AddTaskItem.Designer.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Migrations\AppDbContextModelSnapshot.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Services\AuthService.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Services\TaskService.cs

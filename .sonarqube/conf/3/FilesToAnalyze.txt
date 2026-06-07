@@ -1,0 +1,9 @@
+﻿C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\AuthServiceTests.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\Helpers\ConfigurationHelper.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\Helpers\TestDbContextFactory.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Tests\TaskServiceTests.cs
+C:\Users\PMLS\.nuget\packages\microsoft.net.test.sdk\17.14.1\build\net8.0\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\PMLS\.nuget\packages\microsoft.testplatform.testhost\17.14.1\build\net8.0\x64\testhost.exe
+C:\Users\PMLS\.nuget\packages\microsoft.testplatform.testhost\17.14.1\build\net8.0\x64\testhost.dll
+C:\Users\PMLS\.nuget\packages\xunit.runner.visualstudio\3.1.4\build\net8.0\xunit.abstractions.dll
+C:\Users\PMLS\.nuget\packages\xunit.runner.visualstudio\3.1.4\build\net8.0\xunit.runner.visualstudio.testadapter.dll

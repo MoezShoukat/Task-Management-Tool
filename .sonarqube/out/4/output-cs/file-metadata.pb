@@ -1,0 +1,11 @@
+b
+YC:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\Controllers\AuthController.csutf-8b
+YC:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\Controllers\TaskController.csutf-8f
+]C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\Middleware\ExceptionMiddleware.csutf-8O
+FC:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\Program.csutf-8}
+rC:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\obj\Debug\net10.0\TaskManagement.API.GlobalUsings.g.csutf-8à
+}C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.csutf-8{
+pC:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\obj\Debug\net10.0\TaskManagement.API.AssemblyInfo.csutf-8è
+ÉC:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\obj\Debug\net10.0\TaskManagement.API.MvcApplicationPartsAssemblyInfo.csutf-8Ô
+„C:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\obj\Debug\net10.0\Microsoft.AspNetCore.OpenApi.SourceGenerators\Microsoft.AspNetCore.OpenApi.SourceGenerators.XmlCommentGenerator\OpenApiXmlCommentSupport.generated.csutf-8Î
+ﬂC:\Main\10p\Task-Management-Tool\backend\TaskManagement.API\obj\Debug\net10.0\Microsoft.AspNetCore.App.SourceGenerators\Microsoft.AspNetCore.SourceGenerators.PublicProgramSourceGenerator\PublicTopLevelProgram.Generated.g.csutf-8

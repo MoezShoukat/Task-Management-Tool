@@ -17,18 +17,15 @@ namespace TaskManagement.Infrastructure.Services;
 public class AuthService : IAuthService
 {
     private readonly UserManager<AppUser> _userManager;
-    private readonly RoleManager<IdentityRole> _roleManager;
     private readonly IConfiguration _configuration;
     private readonly AppDbContext _context;
 
     public AuthService(
         UserManager<AppUser> userManager,
-        RoleManager<IdentityRole> roleManager,
         IConfiguration configuration,
         AppDbContext context)
     {
         _userManager = userManager;
-        _roleManager = roleManager;
         _configuration = configuration;
         _context = context;
     }

@@ -1,0 +1,9 @@
+﻿C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\AuthResponse.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\CreateTaskRequest.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\LoginRequest.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\RegisterRequest.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\TaskDto.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\TaskSummaryDto.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\DTOs\UpdateTaskRequest.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\Interfaces\IAuthService.cs
+C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Application\Interfaces\ITaskService.cs

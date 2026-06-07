@@ -1,0 +1,12 @@
+d
+[C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Data\AppDbContext.csutf-8z
+qC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Migrations\20260508052650_InitialCreate.csutf-8…
+zC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Migrations\20260508052650_InitialCreate.Designer.csutf-8x
+oC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Migrations\20260606153802_AddTaskItem.csutf-8ƒ
+xC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Migrations\20260606153802_AddTaskItem.Designer.csutf-8y
+nC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Migrations\AppDbContextModelSnapshot.csutf-8g
+^C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Services\AuthService.csutf-8g
+^C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\Services\TaskService.csutf-8”
+ˆC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.GlobalUsings.g.csutf-8”
+ˆC:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.csutf-8’
+†C:\Main\10p\Task-Management-Tool\backend\TaskManagement.Infrastructure\obj\Debug\net10.0\TaskManagement.Infrastructure.AssemblyInfo.csutf-8
